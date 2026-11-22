@@ -7,7 +7,7 @@
     return 'https://wa.me/905016967777?text='+encodeURIComponent(t);
   };
   document.querySelectorAll('.pcard[data-base]').forEach(function(card){
-    var base=+card.getAttribute('data-base'), name=card.getAttribute('data-name');
+    var base=+card.getAttribute('data-base'), name=card.getAttribute('data-name'), pkg=card.getAttribute('data-pkg')||'', group=card.getAttribute('data-group')||'';
     var form=card.querySelector('.disc'); if(!form)return;
     var input=form.querySelector('input'), btn=form.querySelector('button'), msg=form.querySelector('.dmsg');
     var amt=card.querySelector('.amt'), old=card.querySelector('.old'), choose=card.querySelector('.choose');
@@ -20,7 +20,7 @@
       var code=input.value.trim();
       if(!code){say('Lütfen bir indirim kodu girin.','err');input.focus();return;}
       btn.disabled=true;say('Kontrol ediliyor…');
-      fetch('/api/discount',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({code:code})})
+      fetch('/api/discount',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({code:code,pkg:pkg,group:group})})
         .then(function(r){return r.json().catch(function(){return {ok:false};});})
         .then(function(d){
           if(d&&d.ok){
@@ -29,7 +29,7 @@
             card.classList.add('discounted');
             choose.href=waLink(name,d.code,d.percent,p);
             say('%'+d.percent+' indirim uygulandı · '+d.code,'ok');
-          }else{reset();say('Geçersiz veya süresi dolmuş kod.','err');}
+          }else{reset();var e=d&&d.error;say(e==='scope'?'Bu kod bu pakette geçerli değil.':e==='expired'?'Bu kodun süresi dolmuş.':'Geçersiz indirim kodu.','err');}
         })
         .catch(function(){reset();say('Bağlantı hatası, lütfen tekrar deneyin.','err');})
         .finally(function(){btn.disabled=false;});
