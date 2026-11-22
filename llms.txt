@@ -1,0 +1,27 @@
+# Reklamcız
+
+> Yalova Çiftlikköy merkezli fotoğraf ve video prodüksiyon ekibi: reklam filmi, reklam fotoğrafçılığı, düğün, doğum günü ve organizasyon çekimi, heli shot (dron ile havadan çekim) ve Instagram sosyal medya yönetimi. Hizmet bölgesi: Yalova (tüm ilçeler), İstanbul ve Bursa. Site dili: Türkçe.
+
+- Telefon / WhatsApp: +90 501 696 77 77
+- Adres: Çiftlikköy, Yalova, Türkiye
+- Instagram: https://www.instagram.com/reklamciz/
+
+## Sayfalar
+
+- [Ana sayfa](https://reklamciz.tavakolistudio.workers.dev/): Hizmetlere genel bakış ve sık sorulan sorular
+- [Hizmetler](https://reklamciz.tavakolistudio.workers.dev/hizmetler): Reklam filmi, reklam fotoğrafı, düğün/doğum günü/organizasyon, heli shot, sosyal medya yönetimi
+- [Fiyatlar](https://reklamciz.tavakolistudio.workers.dev/fiyatlar): Paketler ve TL fiyatları, hizmet koşulları, indirim kodu
+- [İletişim](https://reklamciz.tavakolistudio.workers.dev/iletisim): Telefon, WhatsApp, adres ve harita
+
+## Fiyatlar (TL)
+
+- Video Essential: 17.500 TL (1 saat çekim, 30–45 sn dikey video)
+- Marka Filmi: 33.000 TL (3 saat çekim, 60–90 sn ana film + 2 dikey video)
+- Görsel Kampanya: 45.500 TL (fotoğraf + video, 30 fotoğraf, reklam filmi)
+- Havadan Signature: 63.000 TL (fotoğraf, video ve havadan çekim)
+- 1 Günlük Fuar Paketi: 48.000 TL
+- 3 Günlük Fuar Paketi: 116.000 TL
+- Doğum Günü: 12.000 TL (birkaç dakikalık videolar + tüm fotoğraf dosyaları)
+- Sosyal Medya Standart Paket: 36.000 TL / ay (ayda en az 15 gönderi, ayda 1 yerinde çekim)
+
+Son güncelleme: 2026-11-22

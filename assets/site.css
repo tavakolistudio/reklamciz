@@ -174,3 +174,9 @@ section{position:relative}
 .dmsg.err{color:var(--red)}
 .pcard.discounted .price .amt{color:var(--red)}
 .discnote{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--mid);padding:18px 0 0}
+
+/* instagram header button */
+.ig{position:absolute;right:calc(clamp(16px,2.6vw,38px) + 190px);top:20px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:var(--panel);color:var(--light);clip-path:var(--cut6);transition:background .15s}
+.ig svg{width:14px;height:14px;fill:currentColor}
+.ig:hover{background:var(--red)}
+@media (max-width:900px){.ig{display:none}}
