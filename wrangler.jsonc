@@ -1,11 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "reklamciz",
+  "main": "src/worker.js",
   "compatibility_date": "2026-11-19",
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "."
-  }
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  // Discount codes: key = code (UPPERCASE), value = percent (e.g. "10")
+  "kv_namespaces": [
+    { "binding": "DISCOUNTS", "id": "6396d840514d40c3ba3c2a24e439b4d5" }
+  ]
 }

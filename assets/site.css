@@ -153,3 +153,24 @@ section{position:relative}
 .pcard .price small{font-size:14px}
 .pcard .price .old{display:block;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.04em;opacity:.55;margin-bottom:6px}
 #kosullar .specs li span{color:inherit;text-align:left}
+
+/* discount code box */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.disc{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.disc input{flex:1 1 140px;min-width:0;height:40px;padding:0 12px;border:1px solid rgba(17,16,18,.25);background:rgba(255,255,255,.6);font:500 12px/1 var(--mono);letter-spacing:.06em;color:var(--ink);text-transform:uppercase;border-radius:0}
+.disc input::placeholder{text-transform:none;color:#7b7a7e;letter-spacing:.02em}
+.disc input:focus{outline:2px solid var(--red);outline-offset:0;border-color:transparent}
+.disc button{height:40px;padding:0 14px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:700 11px/1 var(--mono);letter-spacing:.1em;cursor:pointer;transition:background .15s,color .15s}
+.disc button:hover{background:var(--ink);color:#fff}
+.disc button:disabled{opacity:.5;cursor:wait}
+.pcard.dark .disc input{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#fff}
+.pcard.dark .disc input::placeholder{color:#8b8c90}
+.pcard.dark .disc button{border-color:rgba(255,255,255,.5);color:#fff}
+.pcard.dark .disc button:hover{background:#fff;color:var(--ink)}
+.dmsg{flex-basis:100%;min-height:0;font:600 11px/1.4 var(--mono);letter-spacing:.06em}
+.dmsg:empty{display:none}
+.dmsg.ok{color:#1d8a4a}
+.pcard.dark .dmsg.ok{color:#5fd68f}
+.dmsg.err{color:var(--red)}
+.pcard.discounted .price .amt{color:var(--red)}
+.discnote{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--mid);padding:18px 0 0}
