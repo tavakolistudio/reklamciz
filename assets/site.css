@@ -145,3 +145,11 @@ section{position:relative}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .9s cubic-bezier(.16,.84,.24,1),transform .9s cubic-bezier(.16,.84,.24,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* pricing additions */
+.pcard .ptitle{font-family:"Sora",sans-serif;font-weight:600;font-size:22px;letter-spacing:-.02em;margin-top:10px}
+.pcard .psub{font-size:13px;color:var(--mid);margin-top:4px}
+.pcard.dark .psub{color:#a9aaae}
+.pcard .price small{font-size:14px}
+.pcard .price .old{display:block;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.04em;opacity:.55;margin-bottom:6px}
+#kosullar .specs li span{color:inherit;text-align:left}
