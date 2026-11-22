@@ -180,3 +180,23 @@ section{position:relative}
 .ig svg{width:14px;height:14px;fill:currentColor}
 .ig:hover{background:var(--red)}
 @media (max-width:900px){.ig{display:none}}
+
+/* coverage map */
+.covbox{grid-column:1/-1;padding:clamp(16px,2.4vw,28px);position:relative}
+.covhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.covleg{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.1em;color:#a9aaae}
+.covleg i{width:14px;height:10px;background:var(--red)}
+.covmap{display:block;width:100%;height:auto;max-height:620px}
+.covmap .base path{fill:#26272b;stroke:#3b3c41;stroke-width:1;vector-effect:non-scaling-stroke}
+.covmap .hlg path{fill:var(--red);stroke:#fff;stroke-width:1.2;vector-effect:non-scaling-stroke;transition:fill .2s}
+.covmap .hlg path:hover{fill:#f04a57}
+.covmap text{font-family:var(--mono);font-weight:700;letter-spacing:.12em;fill:#fff;pointer-events:none}
+.covmap .lbl text{font-size:22px;text-anchor:middle;paint-order:stroke;stroke:rgba(0,0,0,.35);stroke-width:4px}
+.covmap .sea{font-size:15px;fill:#6f7075;font-weight:500;letter-spacing:.3em;text-anchor:middle}
+.covmap .hq .dot{fill:#fff}
+.covmap .hq .ring{fill:none;stroke:#fff;stroke-width:2}
+.covmap .hq .pulse{fill:rgba(255,255,255,.18);transform-origin:center;animation:covpulse 2.2s ease-out infinite}
+.covmap .hq .lead{fill:none;stroke:#fff;stroke-width:1.2}
+.covmap .hq text{font-size:16px}
+@keyframes covpulse{0%{transform:scale(.4);opacity:1}100%{transform:scale(1.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.covmap .hq .pulse{animation:none}}
