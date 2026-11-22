@@ -200,3 +200,5 @@ section{position:relative}
 .covmap .hq text{font-size:16px}
 @keyframes covpulse{0%{transform:scale(.4);opacity:1}100%{transform:scale(1.6);opacity:0}}
 @media (prefers-reduced-motion:reduce){.covmap .hq .pulse{animation:none}}
+.foot .base .pb{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;line-height:inherit;font-size:inherit}
+.foot .base .pb:hover{color:var(--red)}
