@@ -83,7 +83,7 @@ section{position:relative}
 
 /* service strip on top of hizmetler */
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.chips a{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.1em;padding:9px 12px;background:rgba(240,241,242,.7);border:1px solid rgba(17,16,18,.16);transition:all .15s}
+.chips a,.chips span{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.1em;padding:9px 12px;background:rgba(240,241,242,.7);border:1px solid rgba(17,16,18,.16);transition:all .15s}
 .chips a:hover{background:var(--ink);color:#fff}
 
 /* pricing */
