@@ -7,7 +7,7 @@
 //   "20|*|2026-12-31"                 → every package, valid until the end of that day (Istanbul time)
 //   "20|dogum-gunu|2026-12-31"        → scoped + expiry
 //
-// Package IDs:  video-essential, marka-filmi, portatif-studyo, gorsel-kampanya, havadan-signature,
+// Package IDs:  video-essential, youtube-video, marka-filmi, portatif-studyo, gorsel-kampanya, havadan-signature,
 //               fuar-1-gun, fuar-3-gun, dogum-gunu, sosyal-standart
 // Section IDs:  reklam-filmi, reklam-fotografi, heli-shot, fuar, ozel-gunler, sosyal-medya
 
